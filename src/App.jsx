@@ -1,11 +1,23 @@
-import React from 'react'
+import About from "./About";
+import Hero from "./Hero";
+import NavBar from "./Navbar";
+import Features from "./Feautures";
+import Story from "./Story";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
-const App = () => {
+function App() {
   return (
-    <main>
-      <h1 className="text-5xl text-orange-500 font-robert-medium" >Welcome</h1>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <NavBar />
+      <Hero />
+      <About />
+      <Features />
+      <Story />
+      <Contact />
+      <Footer />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
